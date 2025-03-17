@@ -4,7 +4,9 @@ import numpy as np
 import pandas as pd
 
 # Load the machine learning model
-model = joblib.load('RF_class_update.pkl')
+with open('RF_class_update.pkl', 'rb') as f:
+    model = pickle.load(f)
+#model = joblib.load('RF_class_update.pkl')
 
 def main():
     st.title('Machine Learning Model Deployment')
