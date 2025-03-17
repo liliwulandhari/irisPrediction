@@ -5,3 +5,4 @@ numpy
 scikit-learn==1.2.2
 setuptools
 wheel
+joblib==1.2.0
